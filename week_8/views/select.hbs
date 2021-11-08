@@ -1,0 +1,49 @@
+<h1>{{ title }}</h1><!--select.js의 title과 연결-->
+
+<table><!--테이블을 선언합니다.-->
+ <tr><!--tr은 행을 의미합니다.-->
+  <td>Fname</td><!--td는 열을 의미합니다-->
+  <td>Minit</td>
+  <td>Lname</td>
+  <td>Ssn</td>
+  <td>Bdate</td>
+  <td>Address</td>
+  <td>Sex</td>
+  <td>Salary</td>
+  <td>Super_ssn</td>
+  <td>Dno</td>
+ </tr>
+ {{#each employee}}<!--#each /each를 사용해 반복하면서 테이블을 채웁니다.-->
+ <tr>
+  <td>{{Fname}}</td>
+  <td>{{Minit}}</td>
+  <td>{{Lname}}</td>
+  <td>{{Ssn}}</td>
+  <td>{{Bdate}}</td>
+  <td>{{Address}}</td>
+  <td>{{Sex}}</td>
+  <td>{{Salary}}</td>
+  <td>{{Super_ssn}}</td>
+  <td>{{Dno}}</td>
+ </tr>
+ {{/each}}
+ </table><!--테이블 끝남-->
+
+<h1>{{ title2 }}</h1><!--select.js의 title2와 연결-->
+
+<table><!--테이블을 선언합니다.-->
+ <tr><!--tr은 행을 의미합니다.-->
+  <td>Dname</td><!--td는 열을 의미합니다-->
+  <td>Dnumber</td>
+  <td>Mgr_ssn</td>
+  <td>Mgr_start_date</td>
+ </tr>
+ {{#each department}}<!--#each /each를 사용해 반복하면서 테이블을 채웁니다.-->
+ <tr>
+  <td>{{Dname}}</td>
+  <td>{{Dnumber}}</td>
+  <td>{{Mgr_ssn}}</td>
+  <td>{{Mgr_start_date}}</td>
+ </tr>
+ {{/each}}
+</table><!--테이블 끝남-->

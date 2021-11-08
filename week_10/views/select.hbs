@@ -1,0 +1,14 @@
+<h1>{{ title }}</h1><!--select.js의 title과 연결-->
+
+<table><!--테이블을 선언합니다.-->
+ <tr><!--tr은 행을 의미합니다.-->
+  <td>Dname</td><!--td는 열을 의미합니다-->
+  <td>Money</td>
+ </tr>
+ {{#each debt}}<!--#each /each를 사용해 반복하면서 테이블을 채웁니다.-->
+ <tr>
+  <td>{{Dname}}</td>
+  <td>{{Money}}</td>
+ </tr>
+ {{/each}}
+</table><!--테이블 끝남-->
